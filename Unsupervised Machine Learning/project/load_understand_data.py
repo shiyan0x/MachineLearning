@@ -1,0 +1,12 @@
+import pandas as pd 
+df = pd.read_csv("StudentPerformance.csv")
+print("Sample Rows:")
+print(df.head())
+print("Dataset Info:")
+print(f'Rows :{df.shape[0]}, columns: {df.shape[1]}')
+print("\nDataset Info:")
+print(df.info())
+print("\nSummery statistics:")
+print(df.describe(include = 'all'))
+print("\nMissing values:")
+print(df.isnull().sum())
